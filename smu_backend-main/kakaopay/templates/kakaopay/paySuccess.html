@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 성공</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spoqa+Han+Sans+Neo:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Spoqa Han Sans Neo', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #d4edda, #ffffff);
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #155724;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 16px;
+            color: #3c763d;
+            margin-bottom: 20px;
+        }
+        .icon {
+            font-size: 50px;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 12px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        button:hover:enabled {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">✅</div>
+        <h2>결제 성공</h2>
+        <div class="message">고객님의 결제가 성공적으로 완료되었습니다!<br>아래 버튼을 클릭하여 다음 단계로 진행하세요.</div>
+        <button onclick="redirectToSuccessPage()" id="completeButton">결제 완료</button>
+    </div>
+
+    <script>
+        function redirectToSuccessPage() {
+            // 결제 완료 알림
+            alert("결제 완료되었습니다!");
+
+            // 버튼 비활성화
+            var button = document.getElementById('completeButton');
+            button.disabled = true;
+
+            // 페이지 이동
+            var fullAddress = "{{ full_address }}";
+            window.location.href = 'http://127.0.0.1:8000/success/?fullAddress=' + encodeURIComponent(fullAddress);
+        }
+    </script>
+</body>
+</html>

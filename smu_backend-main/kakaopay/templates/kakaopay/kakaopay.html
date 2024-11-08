@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAKAO PAY 결제</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spoqa+Han+Sans+Neo:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Spoqa Han Sans Neo', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ece9e6, #ffffff);
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #1864AB;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            background-color: #D0EBFF;
+            color: #1864AB;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .btn-warning {
+            background-color: #FFC107; /* 카카오 페이 색상 */
+            color: white;
+        }
+        .btn-warning:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KAKAO PAY</h1>
+        <form method="post">
+            {% csrf_token %}
+            <button class="btn-warning">카카오페이로 결제하기</button>
+        </form>
+    </div>
+</body>
+</html>

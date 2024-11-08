@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 실패</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spoqa+Han+Sans+Neo:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Spoqa Han Sans Neo', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f8d7da, #ffffff);
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #c0392b;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .icon {
+            font-size: 50px;
+            color: #c0392b;
+            margin-bottom: 15px;
+        }
+        a {
+            display: inline-block;
+            padding: 12px;
+            background-color: #f5c6cb;
+            color: #721c24;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #c82333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">❌</div>
+        <h2>결제 실패</h2>
+        <div class="message">죄송합니다. 결제가 실패했습니다.<br>다시 시도하시거나 고객센터에 문의해 주세요.</div>
+        <a href="/kakaoPay">HOME</a>
+    </div>
+</body>
+</html>
