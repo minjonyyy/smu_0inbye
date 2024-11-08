@@ -1,9 +1,0 @@
-node_modules/
-debug.log
-myenv/
-*.pyc
-__pycache__/
-.env
-login_module/config.py
-api_app/config.py
-kakaopay/config.py

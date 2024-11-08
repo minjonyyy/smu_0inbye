@@ -1,6 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "C:/Users/minjonyyy/AppData/Local/Programs/Python/Python312/Lib/site-packages"
-    ],
-    "git.ignoreLimitWarning": true
-}
