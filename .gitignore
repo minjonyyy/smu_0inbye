@@ -4,6 +4,6 @@ myenv/
 *.pyc
 __pycache__/
 .env
-login_module/config.py
-api_app/config.py
-kakaopay/config.py
+smu_backend-main/api_app/config.py
+smu_backend-main/login_module/config.py
+smu_backend-main/kakaopay/config.py
