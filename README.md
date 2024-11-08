@@ -1,6 +1,8 @@
 # smu_0inbye
 
-# 레디스 서버 실행
+
+
+### 레디스 서버 실행
 $ sudo service redis-server start
 
 $ redis-cli
@@ -9,8 +11,12 @@ $ redis-cli
 
 PONG
 
-# 백엔드 서버 실행
-daphne backend.asgi:application --port 8000
+---
 
-# 프론트엔드 서버 실행
-yarn start
+### 백엔드 서버 실행
+**daphne backend.asgi:application --port 8000**
+
+---
+
+### 프론트엔드 서버 실행
+**yarn start**
