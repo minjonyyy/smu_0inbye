@@ -20,3 +20,6 @@ PONG
 
 ### 프론트엔드 서버 실행
 **yarn start**
+
+
+https://youtu.be/62jSQFtYOKA
